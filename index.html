@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Home</title>
+
+        <link rel="stylesheet" href="index.css">
+
+        <script src="node_modules/typewriter-effect/dist/core.js"></script>
+        <script src="node_modules/grapheme-splitter/index.js"></script>
+    </head>
+    
+    <body>
+        
+        <header>
+            <nav id="navbar">
+                <ul id="navbar-list">
+                    <li id="navbar-item">
+                        <a href="#">Home</a>
+                        <hr>
+                    </li>
+                    <li id="navbar-item">
+                        <a href="#">Projects</a>
+                        <hr>
+                    </li>
+                    <li id="navbar-item">
+                        <a href="#">About Me</a>
+                        <hr>
+                    </li>
+                    <li id="navbar-item">
+                        <a href="#">
+                            <button id="contact-btn">Contact</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="titlecontainer">
+            <div id="title-html-element">&lt;h1&gt;</div>
+            <div id="title"></div>
+            <div id="title-html-element">&lt;/h1&gt;</div>
+        </div>
+        
+        <script>
+
+            const element = document.getElementById('title');
+            const stringSplitter = (string) => {
+                const splitter = new GraphemeSplitter();
+                return splitter.splitGraphemes(string);
+            };
+            const typewriter = new Typewriter(element, {
+                delay: 70,
+                stringSplitter
+            });
+
+            typewriter
+                .pauseFor(1000)
+                .typeString('<strong>Hey,</strong>')
+                .pauseFor(300)
+                .typeString('<strong> I\'m Tech</strong>')
+                .pauseFor(100)
+                .typeString(' 👋')
+                .pauseFor(200)
+                .typeString('<br> I do graphcs programming.')
+                .pauseFor(130)
+                .deleteChars(1)
+                .pauseFor(200)
+                .typeString('!')
+                .start()
+        </script>
+
+    </body>
+</html>

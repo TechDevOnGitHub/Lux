@@ -1,0 +1,16 @@
+{
+  "name": "prism-graphics-website",
+  "version": "1.0.0",
+  "description": "The Prism Graphics Website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TechDev_",
+  "license": "ISC",
+  "dependencies": {
+    "grapheme-splitter": "^1.0.4",
+    "shuffle-text": "^0.3.4",
+    "typewriter-effect": "^2.18.0"
+  }
+}
