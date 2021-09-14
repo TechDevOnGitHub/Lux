@@ -79,6 +79,15 @@ body
     transition: left 0.2s,
                 width 0.2s,
                 border-color 0.2s;
+    opacity: 0.0;
+    animation: hr-fade-in 1s ease-in-out 6.5s forwards;
+}
+
+@keyframes hr-fade-in 
+{
+    100% {
+        opacity: 1.0;
+    }
 }
 
 #navbar-item:hover hr 
