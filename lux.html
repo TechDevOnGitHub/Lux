@@ -8,8 +8,10 @@
         <title>Tech's Portfolio - Lux</title>
 
         <script src="js/gallery_img.js"></script>
+        <script src="node_modules/shuffle-text/build/shuffle-text.js"></script>
 
         <link rel="stylesheet" href="css/lux.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     </head>
     
     <body>
@@ -36,12 +38,17 @@
                     </li>
                 </ul>
             </nav>
-            <div class="r"></div>
             <img src="img/lux_bg.png">
-            <div>Lux</div>
+            <div class="title">Lux</div>
         </div>
+
         <div class="main-container">
-            <h2>About the Project</h2>
+            <h2>
+                <div>
+                    <span class="material-icons">info</span>
+                    About the Project
+                </div>
+            </h2>
             <hr>
             <div class="desc-div-element">&lt;div&gt;</div>
             <div>
@@ -71,5 +78,10 @@
             </div>
         </div>
         
+        <script>
+            let element = document.getElementsByClassName('title')[0];
+            new ShuffleText(element).start();
+        </script>
+
     </body>
 </html>

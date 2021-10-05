@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "grapheme-splitter": "^1.0.4",
-    "shuffle-text": "^0.3.4",
+    "shuffle-text": "^0.3.5",
     "typewriter-effect": "^2.18.0"
   }
 }
