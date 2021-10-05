@@ -14,7 +14,7 @@ body
     background-color: #191921;
 }
 
-#navbar-list 
+.navbar-list 
 {
     position: absolute;
     z-index: 1;
@@ -26,13 +26,13 @@ body
     font-family: Lexend Deca;
 }
 
-#navbar-item 
+.navbar-item 
 {
     list-style: none;
     margin-right: 100px;
 }
 
-#navbar-item a 
+.navbar-item a 
 {
     color: #a9b1d6;
     text-decoration: none;
@@ -40,13 +40,13 @@ body
     position: relative;
 }
 
-#navbar-item:first-child 
+.navbar-item:first-child 
 {
     margin-right: auto;
     margin-left: 100px;
 }
 
-#navbar-item hr
+.navbar-item hr
 {
     position: relative;
     width: 0;
@@ -60,14 +60,14 @@ body
 
 }
 
-#navbar-item:hover hr 
+.navbar-item:hover hr 
 {
     left: 0;
     width: 100%;
     opacity: 1.0;
 }
 
-#contact-btn 
+.contact-btn 
 {
     border: 2px #a9b1d6 solid;
     background-color: transparent;
@@ -81,19 +81,19 @@ body
                 color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#contact-btn:hover 
+.contact-btn:hover 
 {
     box-shadow: inset 0 -52px 0 0 #a9b1d6;
     color: #191921;
 }
 
-#title-container 
+.title-container 
 {
     height: 650px;
     width: 100%;
 }
 
-#title-container img 
+.title-container img 
 {
     height: 100%;
     width: 100%; 
@@ -101,7 +101,7 @@ body
     opacity: 0.7;
 }
 
-#title-container div 
+.title-container div 
 {
     position: absolute;
     left: 50%;
@@ -112,13 +112,13 @@ body
     font-size: 60px;
 }
 
-#main-container 
+.main-container 
 {
     padding: 40px 60px;
     font-family: Lexend Deca;
 }
 
-#main-container #desc-div-element 
+.main-container .desc-div-element 
 {
     font-family: Kalam;
     color: #3b3c4a;
@@ -126,25 +126,25 @@ body
     margin-top: 14px;
 }
 
-#main-container h2 
+.main-container h2 
 {
     margin-bottom: 25px;
     font-size: 30px;
 }
 
-#main-container hr
+.main-container hr
 {
     margin-bottom: 25px;
     border: #3b3c4a 1px solid;
 }
 
-#main-container div 
+.main-container div 
 {
     margin-top: 5px;
     font-size: 20px;
 }
 
-#main-container #download-btn button
+.main-container .download-btn button
 {
     position: relative;
     left: 50%;
@@ -161,35 +161,46 @@ body
                 color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#main-container #download-btn button:hover 
+.main-container .download-btn button:hover 
 {
     box-shadow: inset 0 -60px 0 0 #a9b1d6;
     color: #191921;
 }
 
-#gallery-container 
+.gallery-container 
 {
     padding: 40px;
     background-color: #121319;
 }
 
-#gallery-container #row 
+.gallery-container .row 
 {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 2%;
 }
 
-#gallery-container #column 
+.gallery-container .column 
 {
     flex: 50%;
     max-width: 50%;
-    padding: 0 20px;
+    padding: 0 2%;
 }
 
-#gallery-container #column img 
+.gallery-container img 
 {
-    margin-top: 40px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     vertical-align: middle;
     width: 100%;
+    opacity: 0.0;
+    transform: scale(105%);
+    transition: opacity 1s ease-in-out, 
+                transform 1s ease-in-out;
+}
+
+.gallery-img-transition
+{
+    opacity: 1.0 !important;
+    transform: scale(100%) !important;
 }

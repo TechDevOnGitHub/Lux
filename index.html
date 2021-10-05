@@ -16,37 +16,37 @@
     <body>
         
         <header>
-            <nav id="navbar">
-                <ul id="navbar-list">
-                    <li id="navbar-item">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
                         <a href="index.html">Home</a>
                         <hr>
                     </li>
-                    <li id="navbar-item">
+                    <li class="navbar-item">
                         <a href="under_construction.html">Projects</a>
                         <hr>
                     </li>
-                    <li id="navbar-item">
+                    <li class="navbar-item">
                         <a href="under_construction.html">About Me</a>
                         <hr>
                     </li>
-                    <li id="navbar-item">
+                    <li class="navbar-item">
                         <a href="under_construction.html">
-                            <button id="contact-btn">Contact</button>
+                            <button class="contact-btn">Contact</button>
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <div id="titlecontainer">
-            <div id="title-html-element">&lt;h1&gt;</div>
-            <div id="title"></div>
-            <div id="title-html-element">&lt;/h1&gt;</div>
+        <div class="titlecontainer">
+            <div class="title-html-element">&lt;h1&gt;</div>
+            <div class="title"></div>
+            <div class="title-html-element">&lt;/h1&gt;</div>
         </div>
         
         <script>
-            const element = document.getElementById('title');
+            const element = document.getElementsByClassName('title')[0];
             const stringSplitter = (string) => {
                 const splitter = new GraphemeSplitter();
                 return splitter.splitGraphemes(string);
