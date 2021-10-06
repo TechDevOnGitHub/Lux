@@ -1,26 +1,55 @@
 
+class ScrollAnimator
+{
+    animationElements = [];
+    animationClassesDict = [];
+
+    addAnimationElement(element, main_class, animation_class)
+    {
+        this.animationElements.push(element);
+        if(!(main_class in this.animationClassesDict && this.animationClassesDict[main_class] == animation_class)) 
+        {
+            this.animationClassesDict[main_class] = animation_class;
+        }
+    }
+
+    animate()
+    {
+        for (let i = 0; i < this.animationElements.length; i++) 
+        {
+            let animElem = this.animationElements[i];
+            animElem.classList.remove(animElem.animation_class);
+        }
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                for (let i = 0; i < Object.keys(this.animationClassesDict).length; i++) 
+                {
+
+                    let animation_class = Object.values(this.animationClassesDict)[i];
+
+                    if (entry.isIntersecting) 
+                        entry.target.classList.add(animation_class);
+                    else
+                        entry.target.classList.remove(animation_class);
+
+                }
+            })
+        });
+
+        for (let i = 0; i < this.animationElements.length; i++) 
+        {
+            observer.observe(this.animationElements[i]);
+        }
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() 
 {
-    let galleryImages = document.getElementsByClassName('gallery-img');
-    for (let i = 0; i < galleryImages.length; i++) 
-    {
-        galleryImages[i].classList.remove('gallery-img-transition');
-    }
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) 
-            {
-                entry.target.classList.add('gallery-img-transition');
-            }
-            else 
-            {
-                entry.target.classList.remove('gallery-img-transition');
-            }
-        });
-    });
-
+    let scrollAnimator = new ScrollAnimator();
+    let galleryImages = document.querySelectorAll('.gallery-img');
     for (let i = 0; i < galleryImages.length; i++) {
-        observer.observe(galleryImages[i]);
+        scrollAnimator.addAnimationElement(galleryImages[i], 'gallery-img', 'gallery-img-transition');
     }
+    scrollAnimator.animate();
 });

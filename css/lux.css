@@ -151,7 +151,7 @@ body
 
 .main-container .download-btn button
 {
-    position: relative;
+    position: relative;             /* Not centered correctly, please fix thanks */
     left: 50%;
     transform: translateX(-50%);
     margin: 20px;
