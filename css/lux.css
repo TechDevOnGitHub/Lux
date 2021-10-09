@@ -151,10 +151,10 @@ body
 
 .main-container .download-btn button
 {
-    position: relative;             /* Not centered correctly, please fix thanks */
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin: 20px;
+    margin: 20px 0 20px 0;
     top: 10px;
     border: 2px #a9b1d6 solid;
     background-color: transparent;
@@ -209,4 +209,47 @@ body
 {
     opacity: 1.0 !important;
     transform: scale(100%) !important;
+}
+
+.main-container a
+{
+    transition: color 0.3s;
+}
+
+.main-container a:hover 
+{
+    color: white;
+}
+
+.menu-icon 
+{
+    position: absolute;
+    z-index: 2;
+    padding: 40px 0;
+    margin-left: 8%;
+    opacity: 0.0;
+    cursor: pointer;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+@media screen and (max-width: 880px) 
+{
+    .gallery-container .column
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .navbar 
+    {
+        opacity: 0.0;
+    }
+
+    .menu-icon 
+    {
+        opacity: 1.0;
+    }
 }
