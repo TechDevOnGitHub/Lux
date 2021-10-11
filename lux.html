@@ -16,9 +16,25 @@
     </head>
     
     <body>
-        
+
         <div class="title-container">
-            <span class="material-icons md-48 menu-icon">menu</span>
+            <span class="material-icons menu-icon md-48">
+                <img src="svg/menu_white_24dp.svg">
+            </span>
+            <div class="menu-bar-div">
+                <li class="menu-bar-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-bar-item">
+                    <a href="under_construction.html">Projects</a>
+                </li>
+                <li class="menu-bar-item">
+                    <a href="under_construction.html">About Me</a>
+                </li>
+                <li class="menu-bar-item">
+                    <a href="under_construction.html">Contact</a>
+                </li>
+            </div>
             <nav class="navbar">
                 <ul class="navbar-list">
                     <li class="navbar-item">
@@ -83,6 +99,17 @@
         <script>
             let element = document.getElementsByClassName('title')[0];
             new ShuffleText(element).start();
+        </script>
+
+        <script>
+            let menuIconElement = document.querySelector('.menu-icon');
+            menuIconElement.addEventListener('click', () => {
+                let element = document.querySelector('.menu-bar-div');
+                if(!element.classList.contains('enabled'))
+                    element.classList.add('enabled');
+                else
+                    element.classList.remove('enabled');
+            });
         </script>
 
     </body>
