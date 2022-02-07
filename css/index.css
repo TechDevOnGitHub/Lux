@@ -81,7 +81,6 @@ body
     pointer-events: all;
     bottom: 0px;
     position: relative;
-    
 }
 
 .navbar-item:first-child
@@ -92,7 +91,7 @@ body
 
 .contact-btn 
 {
-    border: 2px #191921 solid;
+    border: 2px #a9b1d6 solid;
     background-color: #191921;
     color: #a9b1d6;
     padding: 8px 26px;
