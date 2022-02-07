@@ -231,7 +231,7 @@ body
     
     opacity: 0.0;
     cursor: pointer;
-    pointer-events: none;
+    width: 48px;
 
     user-select: none;
     -webkit-user-select: none;
@@ -277,7 +277,7 @@ body
         max-width: 100%;
     }
 
-/*    .navbar 
+    .navbar 
     {
         opacity: 0.0;
     }
@@ -285,31 +285,20 @@ body
     .menu-icon 
     {
         opacity: 1.0;
-        pointer-events: all;
-    }*/
-
-    .navbar-item
-    {
-        margin: 0 auto 10px auto;
-        padding: 0 10px 10px 10px;
-        flex-wrap: wrap;
+        z-index: 3;
     }
 
-    .navbar-item:first-child 
+    .menu-bar-div.enabled 
     {
-        margin: 0 auto 10px auto;
+        transform: none;
+        opacity: 0.7;
     }
+}
 
-    .navbar-list 
+@media screen and (max-width: 450px) 
+{
+    .menu-bar-div 
     {
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 80%;
-        left: 10%;
+        width: 100%;
     }
 }
