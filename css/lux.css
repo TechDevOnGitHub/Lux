@@ -229,6 +229,7 @@ body
     margin-left: 8%;
     opacity: 0.0;
     cursor: pointer;
+    pointer-events: none;
 
     user-select: none;
     -webkit-user-select: none;
@@ -243,7 +244,7 @@ body
         max-width: 100%;
     }
 
-    .navbar 
+/*    .navbar 
     {
         opacity: 0.0;
     }
@@ -251,5 +252,31 @@ body
     .menu-icon 
     {
         opacity: 1.0;
+        pointer-events: all;
+    }*/
+
+    .navbar-item
+    {
+        margin: 0 auto 10px auto;
+        padding: 0 10px 10px 10px;
+        flex-wrap: wrap;
+    }
+
+    .navbar-item:first-child 
+    {
+        margin: 0 auto 10px auto;
+    }
+
+    .navbar-list 
+    {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        left: 10%;
     }
 }

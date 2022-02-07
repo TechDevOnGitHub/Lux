@@ -29,19 +29,10 @@ body
 .title-html-element 
 {
     position: relative;
-    right: 30px;
-    color: #191921;
     font-size: 30px;
     font-family: Kalam;
-    animation: title-html-elements-fade-in 1s ease-in-out 6.5s forwards;
-}
-
-@keyframes title-html-elements-fade-in 
-{
-    100% {
-        color: #3b3c4a;
-        right: 0;
-    }
+    color: #3b3c4a;
+    right: 0;
 }
 
 .navbar-list 
@@ -71,15 +62,7 @@ body
     transition: left 0.2s,
                 width 0.2s,
                 border-color 0.2s;
-    opacity: 0.0;
-    animation: hr-fade-in 1s ease-in-out 6.5s forwards;
-}
-
-@keyframes hr-fade-in 
-{
-    100% {
-        opacity: 1.0;
-    }
+    opacity: 1.0;
 }
 
 .navbar-item:hover hr 
@@ -91,22 +74,14 @@ body
 
 .navbar-item a 
 {
-    color: #191921;
+    
     text-decoration: none;
     font-size: 20px;
-    pointer-events: none;   /* Deactivates links before fade in */
-    animation: navbar-items-fade-in 1s ease-in-out 6.5s forwards;
+    color: #a9b1d6;
+    pointer-events: all;
+    bottom: 0px;
     position: relative;
-    bottom: 18px;
-}
-
-@keyframes navbar-items-fade-in 
-{
-    100% {
-        color: #a9b1d6;
-        pointer-events: all;
-        bottom: 0px;
-    }
+    
 }
 
 .navbar-item:first-child
@@ -127,16 +102,7 @@ body
     box-shadow: inset 0 0 0 0 #a9b1d6;
     transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1),
                 color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation: button-fade-in 1s ease-in-out 6.5s forwards;
-    opacity: 0.0;
-}
-
-@keyframes button-fade-in 
-{
-    100% {
-        border-color: #a9b1d6;
-        opacity: 1.0;
-    }
+    opacity: 1.0;
 }
 
 .contact-btn:hover 
