@@ -17,22 +17,74 @@ body
 .titlecontainer 
 {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10%;
+    top: 35%;
+    width: 100%;
+    text-align: center;
 
     font-family: Lexend Deca;
     font-weight: lighter;
     font-size: 50px;
 }
 
-.title-html-element 
+.socials-container
 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+}
+
+.socials-container ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0;
+}
+
+.socials-container ul li 
+{
+    font-size: 60px;
     position: relative;
-    font-size: 30px;
-    font-family: Kalam;
-    color: #3b3c4a;
-    right: 0;
+    width: 16.6666%;
+    min-width: 140px;
+    padding: 16px 0 16px 0;
+    list-style: none;
+}
+
+.fa-brands 
+{
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover .fa-discord
+{
+    color: #7289DA;
+}
+
+a:hover .fa-patreon
+{
+    color: #FF424D;
+}
+
+a:hover .fa-github
+{
+    color: #fafafa;
+}
+
+a:hover .fa-spotify 
+{
+    color: #1DB954;
+}
+
+a:hover .fa-youtube 
+{
+    color: #FF0000;
+}
+
+a:hover .fa-twitch 
+{
+    color: #6441a5;
 }
 
 .navbar-list 
@@ -108,4 +160,37 @@ body
 {
     box-shadow: inset 0 -52px 0 0 #a9b1d6;
     color: #191921;
+}
+
+.main-div 
+{
+    top: 80%;
+    transform: translateY(190px);
+    position: absolute;
+    /* height: 600px; */
+    height: 55%;
+    width: 100%;
+    background-color: #13131A;
+    font-family: Lexend Deca;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.main-div .create-title 
+{
+    position: absolute;
+    top: -11.2vw;
+    width: 100%;
+    font-size: 18vw;
+    color: #3B3C4A;
+}
+
+.main-div .main-div-text 
+{
+    position: relative;
+    transform: translateY(9vw);
+    top: 50px;
+    margin-left: 20px;
+    margin-right: 20px; 
 }

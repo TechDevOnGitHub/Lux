@@ -11,6 +11,7 @@
 
         <script src="node_modules/typewriter-effect/dist/core.js"></script>
         <script src="node_modules/grapheme-splitter/index.js"></script>
+        <script src="https://kit.fontawesome.com/bd76bbb1f2.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -40,11 +41,59 @@
         </header>
 
         <div class="titlecontainer">
-            <div class="title-html-element">&lt;h1&gt;</div>
             <div class="title"></div>
-            <div class="title-html-element">&lt;/h1&gt;</div>
+        </div>
+
+        <div class="socials-container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-patreon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
         
+        <div class="main-div">
+            <h1 class="create-title">I CREATE.</h1>
+            <div class="main-div-text">
+                Hey, I am a programmer, musician from Germany!<br>
+                <br>
+                Creating is what I do. Always.<br>
+                <br>
+                Whether it is related to programming, music, art or other things - I rarely stop<br>
+                working on my passion projects, some of which, I want to share with the world, which is why<br>
+                this site exists. If you want to get to know me more, check out my about me page~<br>
+                <br>
+                Thanks for coming by!
+            </div>
+        </div>
+
         <script>
             const element = document.getElementsByClassName('title')[0];
             const stringSplitter = (string) => {
@@ -63,12 +112,6 @@
                 .typeString('<strong> I\'m Tech</strong>')
                 .pauseFor(100)
                 .typeString(' 👋')
-                .pauseFor(200)
-                .typeString('<br> I do graphics programming.')
-                .pauseFor(130)
-                .deleteChars(1)
-                .pauseFor(200)
-                .typeString('!')
                 .start()
         </script>
 
