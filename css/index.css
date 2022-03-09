@@ -52,6 +52,23 @@ body
     list-style: none;
 }
 
+.socials-container ul li a i 
+{
+    animation: 1s ease-out 0s 1 socialsSlideIn; 
+}
+
+@keyframes socialsSlideIn 
+{
+    0% 
+    {
+        color: #191921;
+    }
+    100%
+    {
+        color: #a9b1d6;
+    }
+}
+
 .fa-brands 
 {
     transition: color 0.2s ease-in-out;
@@ -192,5 +209,12 @@ a:hover .fa-twitch
     transform: translateY(9vw);
     top: 50px;
     margin-left: 20px;
-    margin-right: 20px; 
+    margin-right: 20px;
+    transition: color 1s ease-in-out;
+    color: #101017;
+}
+
+.main-div-text-transition 
+{
+    color: #a9b1d6 !important;
 }
