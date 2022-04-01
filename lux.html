@@ -9,54 +9,15 @@
 
         <script src="js/scrollAnimator.js"></script>
         <script src="node_modules/shuffle-text/build/shuffle-text.js"></script>
-
+        
         <link rel="stylesheet" href="css/lux.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/google-icons.css">
-        <link rel="stylesheet" href="css/mobile-navbar.css">
     </head>
     
     <body>
         <div class="title-container">
-            <span class="material-icons menu-icon md-48">
-                <img src="svg/menu_white_24dp.svg">
-            </span>  
-            <div class="menu-bar-div">
-                <li class="menu-bar-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="menu-bar-item">
-                    <a href="projects.html">Projects</a>
-                </li>
-                <li class="menu-bar-item">
-                    <a href="under_construction.html">About Me</a>
-                </li>
-                <li class="menu-bar-item">
-                    <a href="under_construction.html">Contact</a>
-                </li>
-            </div>
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="index.html">Home</a>
-                        <hr>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="projects.html">Projects</a>
-                        <hr>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="under_construction.html">About Me</a>
-                        <hr>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="under_construction.html">
-                            <button class="contact-btn">Contact</button>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <img src="img/lux/common/lux_2.png">
+            <img class="title-background" src="img/lux/common/lux_6.png">
             <div class="title">Lux</div>
         </div>
 
@@ -67,6 +28,7 @@
                     About the Project
                 </div>
             </h2>
+            
             <hr>
             
             <div>
@@ -81,31 +43,20 @@
                 <div class="column">
                     <img src="img/lux/common/lux_2.png" class="gallery-img gallery-img-transition">
                     <img src="img/lux/common/lux_3.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_18.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_15.png" class="gallery-img gallery-img-transition"
-                    <img src="img/lux/common/lux_5.png" class="gallery-img gallery-img-transition">
+                    <img src="img/lux/common/lux_8.png" class="gallery-img gallery-img-transition">
                     <img src="img/lux/common/lux_11.png" class="gallery-img gallery-img-transition">
                     <img src="img/lux/common/lux_7.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_22.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_13.png" class="gallery-img gallery-img-transition">
                     <img src="img/lux/common/lux_4.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_16.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_20.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_24.png" class="gallery-img gallery-img-transition">
+                    <img src="img/lux/common/lux_15.png" class="gallery-img gallery-img-transition">
                 </div>
                 <div class="column">
                     <img src="img/lux/common/lux_14.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_1.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_12.png" class="gallery-img gallery-img-transition">
+                    <img src="img/lux/common/lux_12.jpg" class="gallery-img gallery-img-transition">
                     <img src="img/lux/common/lux_6.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_19.png" class="gallery-img gallery-img-transition">
                     <img src="img/lux/common/lux_10.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_8.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_23.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_25.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_17.png" class="gallery-img gallery-img-transition">
+                    <img src="img/lux/common/lux_5.png" class="gallery-img gallery-img-transition">
+                    <img src="img/lux/common/lux_13.png" class="gallery-img gallery-img-transition">
                     <img src="img/lux/common/lux_9.png" class="gallery-img gallery-img-transition">
-                    <img src="img/lux/common/lux_21.png" class="gallery-img gallery-img-transition">
                 </div>
             </div>
         </div>
@@ -128,14 +79,17 @@
         </script>
 
         <script>
-            let menuIconElement = document.querySelector('.menu-icon');
-            menuIconElement.addEventListener('click', () => {
-                let element = document.querySelector('.menu-bar-div');
-                if(!element.classList.contains('enabled'))
-                    element.classList.add('enabled');
-                else
-                    element.classList.remove('enabled');
-            });
+            let backgroundElement = document.querySelector(".title-background");
+            let imagePaths = [
+                "./img/lux/common/lux_3.png",
+                "./img/lux/common/lux_4.png",
+                "./img/lux/common/lux_5.png",
+                "./img/lux/common/lux_6.png",
+                "./img/lux/common/lux_14.png"
+            ];
+            let imageIndex = Math.floor(Math.random() * imagePaths.length);
+            backgroundElement.src = imagePaths[imageIndex];
+            
         </script>
 
     </body>

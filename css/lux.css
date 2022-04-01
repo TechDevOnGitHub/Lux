@@ -14,81 +14,6 @@ body
     background-color: #191921;
 }
 
-.navbar-list 
-{
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 40px 0;
-    width: 100%;
-    font-family: Lexend Deca;
-    font-weight: lighter;
-}
-
-.navbar-list .navbar-item 
-{
-    list-style: none;
-    margin-right: 100px;
-}
-
-.navbar-list .navbar-item a 
-{
-    color: #a9b1d6;
-    text-decoration: none;
-    font-size: 20px;
-    position: relative;
-}
-
-.navbar-list .navbar-item:first-child 
-{
-    margin-right: auto;
-    margin-left: 100px;
-}
-
-.navbar-list .navbar-item hr
-{
-    position: relative;
-    width: 0;
-    left: 50%;
-    border-style: solid;
-    opacity: 0.0;
-    border-color: #a9b1d6;
-    background-color: #a9b1d6;
-    transition: left 0.2s,
-                width 0.2s,
-                opacity 0.2s;
-
-}
-
-.navbar-list .navbar-item:hover hr 
-{
-    left: 0;
-    width: 100%;
-    opacity: 1.0;
-}
-
-.contact-btn 
-{
-    border: 2px #a9b1d6 solid;
-    background-color: transparent;
-    color: #a9b1d6;
-    padding: 8px 26px;
-    font-size: 20px;
-    font-family: Lexend Deca;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #a9b1d6;
-    transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1),
-                color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.contact-btn:hover 
-{
-    box-shadow: inset 0 -52px 0 0 #a9b1d6;
-    color: #191921;
-}
-
 .title-container 
 {
     height: 650px;
@@ -98,9 +23,9 @@ body
 .title-container img 
 {
     height: 100%;
-    width: 100%; 
+    width: 100%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .title-container .title 
@@ -150,7 +75,7 @@ body
     background-color: #3b3c4a;
 }
 
-.main-container div 
+.main-container div
 {
     text-align: center;
     margin-top: 5px;
