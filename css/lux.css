@@ -98,7 +98,7 @@ body
 .title-container img 
 {
     height: 100%;
-    width: 100%; 
+    width: 100%;
     object-fit: cover;
     opacity: 0.7;
 }
@@ -150,7 +150,7 @@ body
     background-color: #3b3c4a;
 }
 
-.main-container div 
+.main-container div
 {
     text-align: center;
     margin-top: 5px;
@@ -227,6 +227,17 @@ body
 .main-container a:hover 
 {
     color: white;
+}
+
+img-comparison-slider:focus
+{
+    outline: none;
+}
+
+img-comparison-slider img 
+{
+    position: relative;
+    width: 100vw;
 }
 
 @media screen and (max-width: 880px) 
