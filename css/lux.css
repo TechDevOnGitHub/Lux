@@ -9,6 +9,18 @@
     color: #a9b1d6;
 }
 
+::-moz-selection 
+{
+    color: #191921;
+    background: #a9b1d6;
+}
+  
+::selection 
+{
+    color: #191921;
+    background: #a9b1d6;
+}
+
 body 
 {
     background-color: #191921;
@@ -18,6 +30,7 @@ body
 {
     height: 650px;
     width: 100%;
+    overflow: hidden;
 }
 
 .title-container img 
@@ -26,6 +39,18 @@ body
     width: 100%;
     object-fit: cover;
     opacity: 0.8;
+    transform: scale(1.3);
+    animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) titleBackgroundScaleIn forwards;
+    filter: blur(6px);
+}
+
+@keyframes titleBackgroundScaleIn 
+{
+    100% 
+    {
+        transform: scale(1);
+        filter: blur(0px);
+    }    
 }
 
 .title-container .title 
@@ -33,10 +58,21 @@ body
     position: absolute;
     left: 50%;
     top: 325px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translateY(20px);
     font-family: Lexend Deca;
     color: white;
     font-size: 60px;
+    opacity: 0.0;
+    animation: 3s cubic-bezier(0.075, 0.82, 0.165, 1) titleTextFadeIn forwards;
+}
+
+@keyframes titleTextFadeIn
+{
+    100% 
+    {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }    
 }
 
 .main-container 
@@ -96,8 +132,8 @@ body
     font-size: 22px;
     cursor: pointer;
     box-shadow: inset 0 0 0 0 #a9b1d6;
-    transition: box-shadow 1s cubic-bezier(0.075, 0.82, 0.165, 1),
-                color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: box-shadow 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
+                color 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .main-container .download-btn button:hover 
