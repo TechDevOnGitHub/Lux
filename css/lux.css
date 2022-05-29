@@ -200,7 +200,7 @@ body
     color: white;
 }
 
-.copyright 
+footer
 {
     margin: 20px;
     font-family: Roboto;
@@ -208,7 +208,7 @@ body
     text-align: center;
 }
 
-.copyright strong 
+footer strong 
 {
     font-family: Lexend Deca;
 }
