@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 * 
 {
@@ -79,14 +79,6 @@ body
 {
     padding: 40px 8%;
     font-family: Lexend Deca;
-}
-
-.main-container .desc-div-element 
-{
-    margin: 10px;
-    font-family: Kalam;
-    color: #3b3c4a;
-    font-size: 25px;
 }
 
 .main-container h2 div, .main-container h2 span
