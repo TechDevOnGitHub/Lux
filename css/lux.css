@@ -192,7 +192,7 @@ body
     color: white;
 }
 
-/* footer
+footer
 {
     margin: 20px;
     font-family: Roboto;
@@ -203,7 +203,7 @@ body
 footer strong 
 {
     font-family: Lexend Deca;
-} */
+}
 
 @media screen and (max-width: 880px) 
 {
