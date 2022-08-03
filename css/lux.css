@@ -184,7 +184,7 @@ body
 
 .main-container a
 {
-    transition: color 0.3s;
+    transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .main-container a:hover 
@@ -212,4 +212,46 @@ footer strong
         flex: 100%;
         max-width: 100%;
     }
+}
+
+.brands-container 
+{
+    display: flex;
+    float: right;
+}
+
+.fa-brands 
+{
+    transform: translateY(-100%);
+    opacity: 0.6;
+    position: relative;
+    padding: 20px;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.5s opacity cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-width: 600px) 
+{
+    .brands-container 
+    {
+        float: unset;
+        justify-content: center;
+    }
+
+    .fa-brands 
+    {
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+.fa-brands:hover 
+{
+    cursor: pointer;
+    opacity: 1.0;
 }

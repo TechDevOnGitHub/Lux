@@ -9,7 +9,8 @@
 
         <script src="js/scrollAnimator.js"></script>
         <script src="node_modules/shuffle-text/build/shuffle-text.js"></script>
-        
+        <script src="https://kit.fontawesome.com/bd76bbb1f2.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="css/lux.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/google-icons.css">
@@ -17,8 +18,13 @@
     
     <body>
         <div class="title-container">
+            
             <img class="title-background" src="img/lux/common/6.jpg">
             <div class="title">Lux</div>
+            <div class="brands-container">
+                <a href="https://patreon.com/techthedev"><i class="fa-brands fa-patreon fa-3x"></i></a>
+                <a href="https://github.com/TechDevOnGitHub/Lux-Shader"><i class="fa-brands fa-github fa-3x"></i></a>
+            </div>
         </div>
 
         <div class="main-container">
@@ -113,7 +119,6 @@
             ];
             let imageIndex = Math.floor(Math.random() * imagePaths.length);
             backgroundElement.src = imagePaths[imageIndex];
-            
         </script>
     </body>
 </html>
